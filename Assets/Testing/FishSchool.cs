@@ -245,7 +245,7 @@ public class FishSchool : MonoBehaviour
 
             Quaternion towardsTarget = Quaternion.LookRotation(meToSchoolCenterDir + repelDir, schoolUp) * Quaternion.AngleAxis(rotAwayXAngle, up) * Quaternion.AngleAxis(rotAwayYAngle, right);
 
-            towardsTarget = Quaternion.Lerp(towardsTarget, Quaternion.LookRotation(meToSchoolCenterDir, forward), 0.95f * goHomeT);    
+            towardsTarget = Quaternion.Lerp(towardsTarget, Quaternion.LookRotation(meToSchoolCenterDir, up), 0.95f * goHomeT);    
         
             rot = Quaternion.Lerp(rot, towardsTarget, schoolData.agilityDamping);
 
@@ -271,7 +271,7 @@ public class FishSchool : MonoBehaviour
                 Matrix4x4 trs = fish_container[i];
                 float3 neighPos = trs.GetPosition();
                 float3 meToNeigh = (neighPos - pos) + + 1e-3f;
-                dirs[0] = (meToNeigh);
+                dirs[a] = (meToNeigh);
                 a++;
             }
 
