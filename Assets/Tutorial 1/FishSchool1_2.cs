@@ -7,7 +7,7 @@ using Unity.Jobs;
 using Unity.Mathematics;
 using UnityEngine;
 
-public class FishSchoolTutorial : MonoBehaviour
+public class FishSchool1_2 : MonoBehaviour
 {
     [SerializeField]
     Mesh mesh;
